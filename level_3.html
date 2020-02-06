@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Math Game - Level 3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Wendy+One' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+	  <main>
+			<h1>DIVISION</h1>
+      <p id="instruction" class="structure-elements">Click on the correct answer</p>
+			<div class="box">
+        <section id="question"  class="circle" class="structure-elements"></section>
+      </div>
+      <div id='moving-boxes'>
+        <div class='box1' id="answer1"></div>
+        <div class='box2' id="answer2"></div>
+        <div class='box3' id="answer3"></div>
+        <div class='box4' id="answer4"></div>
+        <div class='box5' id="answer5"></div>
+        <div class='box6' id="answer6"></div>
+        <div class='box7' id="answer7"></div>
+        <div class='box8' id="answer8"></div>
+        <div class='box9' id="answer9"></div>
+      </div>
+      <div class="gameResult" id="scoreResult">Score: <span id="score"></span></div>
+      <div class="gameResult" id="hitResult">Hits: <span id="hits"></span></div>   
+      <div class="gameResult" id="missResult">Miss: <span id="miss"></span></div>  
+      <div class="gameResult" id="timer">Time: <span id="time"> 90 </span> sec</div>  <br>   
+      <div id="control-buttons">
+        <button id="start-reset" class="structure-elements">Start Game</button>
+        <button id="home" class="links"><a href="../index.html" >Home</button>
+      </div>
+    </main>
+    <script src="js/script_level_3.js"></script>
+  </body>
+</html>
