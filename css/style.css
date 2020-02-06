@@ -1,0 +1,254 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+main > div#game-over
+{
+    color: white;
+    background-image: linear-gradient(#F3CA6B, #F3706C);
+    font-size: 3rem;
+    text-transform: uppercase;
+    position: absolute;
+    padding: 20px;
+    min-width: 250px;
+    display: none;
+}
+
+body {
+  font-family: 'Wendy One', sans-serif;  
+  text-align: center;
+  font-size: 1.8rem;
+  color: darkblue;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  background: url(https://dumielauxepices.net/sites/default/files/sky-clipart-cartoonic-765101-9529778.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+
+h1 {
+  background-color: azure;
+  opacity: 0.9;
+  border-style: dotted;
+  border-width: .3rem;
+  padding: .6rem;
+  margin: 2rem;
+  font-size: 2.5rem;
+  letter-spacing: 0.4rem;
+  text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
+}
+
+footer {
+  height: 50%;
+}
+
+.gameResult {
+  text-align: left;
+  margin-left: 2rem;
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: darkblue;
+}
+
+#control-buttons {
+  display: flex; 
+  justify-content: center;
+}
+
+button {
+  background-color:  azure;
+  border: solid;
+  border-radius: 1.5rem;
+  padding: .7rem 1.6rem;
+  cursor: pointer;
+  font-family: 'Wendy One';  
+  text-align: center;
+  font-size: 1.8rem;
+  color: darkblue;
+  margin: 1rem;
+  width: 17rem;
+}
+
+#start-reset {
+  background-color: yellow;
+}
+
+#start {
+  border: none;
+  font-size: 3rem;
+  color: red;
+  margin-top: 10rem;
+}
+
+#level_menu {
+  justify-content: center;
+  padding-top: 3%;
+  display: inline-flex;
+  margin-top: 4rem;
+}
+
+.box{
+  height: 64.5vh;
+}
+
+.circle{
+  font-weight: bold;
+  font-size: 2.5rem;
+  align-content: center;
+  position:absolute;
+  transform:translate3d(-50%,-50%,0);
+  transition:transform 0.2s cubic-bezier(.02,1.23,.79,1.08);
+  z-index:10;
+  width: 5rem;
+  height: 5rem;
+  background-image: url("../images/sunny.png");
+  background-size: cover;
+}
+
+.moving-boxes {
+  height: 62vh;
+  position:relative;
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9 {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.box1 {
+  background-image: url("../images/airplane.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+}
+.box2 {
+  background-image: url("../images/airplane (1).png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.box3 {
+  background-image: url("../images/airship (1).png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.box4 {
+  background-image: url("../images/hot-air-balloon (1).png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.box5 {
+  background-image: url("../images/paper-plane.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.box6 {
+  background-image: url("../images/plane.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.box7 {
+  background-image: url("../images/plane.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.box8 {
+  background-image: url("../images/hot-air-balloon (1).png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.box9 {
+  background-image: url("../images/airplane.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width:400px) {
+  body {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 1.3rem;
+    margin: 0;
+  }
+  #instruction {
+  margin: .5rem;
+  }
+  button {
+    padding: .1rem .1rem;
+    font-size: 1rem;
+    width: 7rem;
+    border-radius: 1rem;
+    margin: .6rem;
+  }
+  .gameResult {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .box{
+  height: 65vh;
+  }
+
+  .circle{
+  position: fixed;
+  transform: none;
+  transition: none;
+  }
+  #start {
+    border: none;
+    width: 15rem;
+    margin-top: 3rem;
+  }
+  #level_menu {
+    display: grid;
+    margin-top: 3rem;
+    margin-bottom: 0;
+  }
+  #level_menu div {
+    padding: .5rem;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 770px) {
+  body {
+    //font-size: 1rem;
+  }
+  h1 {
+    font-size: 1.7rem;
+    margin: 1.2rem;
+  }
+  #instruction {
+    padding-top: 0.7rem;
+  }
+  button {
+    padding: .1rem .1rem;
+    font-size: 1.3rem;
+    border-radius: 1rem;
+  }
+ 
+  .circle{
+  position: fixed;
+  transform: none;
+  transition: none;
+  }
+
+  #start {
+    border: none;
+    margin-top: 3rem;
+  }
+  #level_menu {
+    display: grid;
+    margin-top: 3rem;
+    margin-bottom: 0;
+  }
+}
